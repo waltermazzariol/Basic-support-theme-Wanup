@@ -40,10 +40,18 @@
         margin-top: -71px; /*same height as header*/
         visibility: hidden;
       }
+
+      .nav-pills .nav-link.active{
+        background: #dc3545;
+        color:#fff!important;
+
+      }
+
+
       </style>
   </head>
 
-  <body >
+  <body data-spy="scroll" data-target="#navbar-lateral" data-offset="90">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-lightk fixed-top text-uppercase font-weight-bold" style="background-color:#FFF; border-bottom: 1px solid rgba(0,0,0,0.1);">
@@ -84,10 +92,28 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container mt-5 xs-12">
+   <div class="container mt-5 xs-12">
       <div class="row">
        <div class="col-3" id="sticky-sidebar">
-        <ul class="nav flex-md-column flex-row justify-content-between">
+
+
+         <nav id="navbar-lateral" class="navbar navbar-light bg-light">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link text-danger" href="#item-1">Motor de reserva HTML</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3 my-1 text-danger" href="#item-1-1">Link</a>
+                <a class="nav-link ml-3 my-1 text-danger" href="#item-1-2">Botón</a>
+                <a class="nav-link ml-3 my-1 text-danger" href="#item-1-3">Banner</a>
+                <a class="nav-link ml-3 my-1 text-danger" href="#item-1-4">Barra de búsqueda</a>
+                <a class="nav-link ml-3 my-1 text-danger" href="#item-1-5">Cabecera</a>
+                <a class="nav-link ml-3 my-1 text-danger" href="#item-1-6">Partner hotel</a>
+                <a class="nav-link ml-3 my-1 text-danger" href="#item-1-7">FAQ</a>
+              </nav>
+              <a class="nav-link text-danger" href="#item-2">WIFI</a>
+              <a class="nav-link text-danger" href="#item-3">MICROSITE</a>
+            </nav>
+          </nav>
+          <!--<ul class="nav flex-md-column flex-row justify-content-between">
           <li class="nav-item">
             <a class="nav-link active text-danger" href="#section1">Motor de reserva HTML</a>
                 <ul class="nav flex-column ml-3">
@@ -117,7 +143,7 @@
           <li class="nav-item">
             <a class="nav-link text-danger" href="#">MICROSITE</a>
           </li>
-        </ul>
+        </ul>-->
 
        </div>
 
@@ -126,7 +152,7 @@
 
         <!-- /.Motor de Reserva -->
 
-        <div id="section1"   style="padding-top: 90px; margin-top: -90px;">
+        <div id="item-1"   style="padding-top: 90px; margin-top: -90px;">
         <h1>Motor de reserva HTML</h1>
         <hr>
         <p>El motor de reservas es una herramienta tecnológica creada por Wanup para sus hoteles asociados, completamente libre y gratuita, con la que puedes aumentar tus reservas directas.
@@ -137,7 +163,7 @@
         </div>
         <!-- /.Link al motor de reserva -->
         <p>&nbsp;</p>
-        <div id="section2" style="padding-top: 90px; margin-top: -90px;" >
+        <div id="item-1-1" style="padding-top: 90px; margin-top: -90px;" >
         <h1 >Motor de reserva tipo Link</h1>
         <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis dolor non elit congue eleifend. Morbi molestie diam at libero finibus pulvinar. Nam consectetur vulputate purus, nec pellentesque leo lacinia quis. Morbi mattis condimentum enim et feugiat. Morbi pulvinar lorem non faucibus dapibus. Suspendisse leo justo, dignissim eget aliquam vitae, efficitur laoreet orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis vitae nulla neque. Phasellus facilisis odio sed odio ultrices, a volutpat libero porttitor. Sed euismod arcu at sodales facilisis.</p>
@@ -185,7 +211,7 @@
 
         <!-- /.Botón -->
         <p>&nbsp;</p>
-        <div id="section3" style="padding-top: 90px; margin-top: -90px;">
+        <div id="item-1-2" style="padding-top: 90px; margin-top: -90px;">
         <h1 >Motor de reserva tipo Botón</h1>
         <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis dolor non elit congue eleifend. Morbi molestie diam at libero finibus pulvinar. Nam consectetur vulputate purus, nec pellentesque leo lacinia quis. Morbi mattis condimentum enim et feugiat. Morbi pulvinar lorem non faucibus dapibus. Suspendisse leo justo, dignissim eget aliquam vitae, efficitur laoreet orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis vitae nulla neque. Phasellus facilisis odio sed odio ultrices, a volutpat libero porttitor. Sed euismod arcu at sodales facilisis.</p>
@@ -248,7 +274,7 @@
 
         <!-- /.Banner -->
         <p>&nbsp;</p>
-        <div id="section4" style="padding-top: 90px; margin-top: -90px;">
+        <div id="item-1-3" style="padding-top: 90px; margin-top: -90px;">
         <h1 >Motor de reserva tipo Banner</h1>
         <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis dolor non elit congue eleifend. Morbi molestie diam at libero finibus pulvinar. Nam consectetur vulputate purus, nec pellentesque leo lacinia quis. Morbi mattis condimentum enim et feugiat. Morbi pulvinar lorem non faucibus dapibus. Suspendisse leo justo, dignissim eget aliquam vitae, efficitur laoreet orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis vitae nulla neque. Phasellus facilisis odio sed odio ultrices, a volutpat libero porttitor. Sed euismod arcu at sodales facilisis.</p>
@@ -291,7 +317,7 @@
 
         <!-- /.-barra de búsqueda -->
         <p>&nbsp;</p>
-        <div id="section5" style="padding-top: 90px; margin-top: -90px;">
+        <div id="item-1-4" style="padding-top: 90px; margin-top: -90px;">
         <h1 >Motor de reserva tipo Barra de Búsqueda</h1>
         <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis dolor non elit congue eleifend. Morbi molestie diam at libero finibus pulvinar. Nam consectetur vulputate purus, nec pellentesque leo lacinia quis. Morbi mattis condimentum enim et feugiat. Morbi pulvinar lorem non faucibus dapibus. Suspendisse leo justo, dignissim eget aliquam vitae, efficitur laoreet orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis vitae nulla neque. Phasellus facilisis odio sed odio ultrices, a volutpat libero porttitor. Sed euismod arcu at sodales facilisis.</p>
@@ -334,7 +360,7 @@
 
         <!-- /.Cabecera -->
         <p>&nbsp;</p>
-        <div id="section6" style="padding-top: 90px; margin-top: -90px;">
+        <div id="item-1-5" style="padding-top: 90px; margin-top: -90px;">
         <h1 >Motor de reserva tipo Cabecera</h1>
         <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis dolor non elit congue eleifend. Morbi molestie diam at libero finibus pulvinar. Nam consectetur vulputate purus, nec pellentesque leo lacinia quis. Morbi mattis condimentum enim et feugiat. Morbi pulvinar lorem non faucibus dapibus. Suspendisse leo justo, dignissim eget aliquam vitae, efficitur laoreet orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis vitae nulla neque. Phasellus facilisis odio sed odio ultrices, a volutpat libero porttitor. Sed euismod arcu at sodales facilisis.</p>
@@ -377,7 +403,7 @@
 
         <!-- /.Partner Hotel -->
         <p>&nbsp;</p>
-        <div id="section7" style="padding-top: 90px; margin-top: -90px;">
+        <div id="item-1-6" style="padding-top: 90px; margin-top: -90px;">
         <h1 >Motor de reserva tipo Partner Hotel</h1>
         <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis dolor non elit congue eleifend. Morbi molestie diam at libero finibus pulvinar. Nam consectetur vulputate purus, nec pellentesque leo lacinia quis. Morbi mattis condimentum enim et feugiat. Morbi pulvinar lorem non faucibus dapibus. Suspendisse leo justo, dignissim eget aliquam vitae, efficitur laoreet orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis vitae nulla neque. Phasellus facilisis odio sed odio ultrices, a volutpat libero porttitor. Sed euismod arcu at sodales facilisis.</p>
@@ -416,7 +442,8 @@
             <!-- /.Preguntas Frecuentes -->
 
         <p>&nbsp;</p>
-        <h4>Preguntas Frecuentes</h4><br>
+        <div id="item-1-7" style="padding-top: 90px; margin-top: -90px;">
+        <h1>Preguntas Frecuentes</h1><br>
         <strong>1, ¿A dónde me dirige el motor de reserva cuando hago clic?</strong>
         <P>- El motor de búsqueda genera una página de reserva para el hotel, donde le permite al usuario realizar la reservación en las diferentes habitaciones disponibles, con la opción de canjear su travel cash.</P>
 
@@ -447,7 +474,7 @@
         <strong>10. ¿Puedes generar un botón nativo que redirija al motor de reserva?</strong>
         <P>- Si, se puede solicitar el hipervínculo del motor de reserva para generar enlaces y botones nativos.</P>
 
-
+      </div>
 
 
       </div>
@@ -458,6 +485,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-ui-1.12.1/jquery-ui.js"></script>
 
   </body>
 
